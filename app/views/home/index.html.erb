@@ -1,2 +1,19 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+Chat: <span id ='chat'></span>
+<hr>
+Message:
+<br>
+<textarea id = "msg" style="width: 380px; height: 100px"></textarea>
+<hr>
+<button id="send">Send Message</button>
+
+<script>
+
+
+  $(document).ready(function (){
+      $('#send').click(function () {
+          msg = $('#msg').val()
+          console.log(msg)
+          /*не получается consumer отсюда вызвать - он всё ломает*/
+      })
+  })
+</script>
